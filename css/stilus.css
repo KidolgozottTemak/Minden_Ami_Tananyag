@@ -1,0 +1,238 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  min-height: 100vh;
+}
+
+#root {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: row;
+  padding-top: 48px;
+  width: 100%;
+}
+#root .kiemel {
+  color: rgb(255, 0, 0);
+}
+@media screen and (max-width: 500px) {
+  #root {
+    padding: 48px 5px 5px 5px;
+  }
+}
+
+#felso-nav {
+  background-color: rgb(39, 39, 39);
+  height: 3em;
+  list-style-type: none;
+  overflow: hidden;
+  position: fixed;
+  top: 0px;
+  user-select: none;
+  white-space: nowrap;
+  width: 100%;
+}
+#felso-nav li {
+  align-items: center;
+  background-color: rgb(39, 39, 39);
+  color: rgb(238, 238, 238);
+  cursor: pointer;
+  display: flex;
+  float: left;
+  height: 100%;
+  justify-content: center;
+  padding: 0.5em;
+}
+#felso-nav li a {
+  color: rgb(238, 238, 238);
+  display: block;
+  text-decoration: none;
+}
+#felso-nav li#elrejtett {
+  display: none;
+}
+#felso-nav li#elrejtett:hover {
+  background-color: rgb(39, 39, 39);
+}
+#felso-nav li.active {
+  background-color: rgb(0, 97, 0);
+}
+#felso-nav li:hover:not(.active) {
+  background-color: rgb(106, 106, 230);
+}
+@media screen and (max-width: 500px) {
+  #felso-nav li#elrejtett {
+    display: block;
+  }
+}
+
+#nyito-tartalom {
+  width: 80%;
+  margin: 1em auto;
+}
+#nyito-tartalom h1 {
+  letter-spacing: 2px;
+}
+#nyito-tartalom h1,
+#nyito-tartalom h2 {
+  margin-bottom: 1em;
+}
+#nyito-tartalom p {
+  margin-bottom: 1em;
+  text-align: justify;
+}
+#nyito-tartalom a {
+  color: rgb(11, 133, 255);
+  text-decoration: none;
+}
+#nyito-tartalom dl dt {
+  color: rgb(117, 0, 72);
+  font-size: large;
+}
+#nyito-tartalom dl dd {
+  padding-left: 1em;
+}
+@media screen and (max-width: 500px) {
+  #nyito-tartalom {
+    width: 100%;
+  }
+}
+
+#oldal-nav {
+  background-color: rgb(119, 119, 119);
+  color: rgb(238, 238, 238);
+  list-style-type: none;
+  max-height: calc(100vh - 48px);
+  overflow-y: scroll;
+  position: sticky;
+  top: 48px;
+  width: 15em;
+}
+#oldal-nav h4 {
+  color: rgb(117, 0, 72);
+  font-family: "Kanit", sans-serif;
+  font-size: x-large;
+  font-weight: 300;
+  padding: 0.2em;
+}
+#oldal-nav li {
+  padding: 0.5em 5px;
+}
+#oldal-nav li.active {
+  background-color: rgb(0, 97, 0);
+}
+#oldal-nav li:hover:not(.active) {
+  background-color: rgb(106, 106, 230);
+}
+#oldal-nav li:nth-child(odd) a {
+  color: rgb(189, 189, 189);
+}
+#oldal-nav li a {
+  color: rgb(238, 238, 238);
+  text-decoration: none;
+}
+@media screen and (max-width: 500px) {
+  #oldal-nav {
+    display: none;
+  }
+}
+
+#tartalom {
+  padding: 1em;
+  width: 70%;
+}
+#tartalom #gombok {
+  display: flex;
+  justify-content: space-between;
+}
+#tartalom #gombok #bal {
+  background-color: rgb(0, 97, 0);
+  border-radius: 5px;
+  color: rgb(238, 238, 238);
+  display: block;
+  font-size: 1.2em;
+  padding: 0.5em;
+  text-decoration: none;
+}
+#tartalom #gombok #bal:hover {
+  cursor: pointer;
+}
+#tartalom #gombok #bal:disabled {
+  background-color: rgb(119, 119, 119);
+}
+#tartalom #gombok #jobb {
+  background-color: rgb(0, 97, 0);
+  border-radius: 5px;
+  color: rgb(238, 238, 238);
+  display: block;
+  font-size: 1.2em;
+  padding: 0.5em;
+  text-decoration: none;
+}
+#tartalom #gombok #jobb:hover {
+  cursor: pointer;
+}
+#tartalom #gombok #jobb:disabled {
+  background-color: rgb(119, 119, 119);
+}
+@media screen and (max-width: 500px) {
+  #tartalom {
+    width: 100%;
+  }
+}
+
+#belso-tartalom p,
+#belso-tartalom h2,
+#belso-tartalom h3,
+#belso-tartalom img,
+#belso-tartalom ul {
+  margin-bottom: 2em;
+}
+#belso-tartalom img {
+  max-width: 50%;
+}
+#belso-tartalom p {
+  text-align: justify;
+}
+#belso-tartalom h1 {
+  margin-bottom: 1em;
+  margin-top: 1em;
+}
+#belso-tartalom a {
+  color: rgb(11, 133, 255);
+  text-decoration: none;
+}
+#belso-tartalom ul {
+  list-style-position: inside;
+}
+#belso-tartalom input[type=radio] {
+  margin-bottom: 1em;
+  margin-right: 0.5em;
+}
+#belso-tartalom input[type=checkbox] {
+  margin-bottom: 1em;
+  margin-right: 0.5em;
+}
+#belso-tartalom button {
+  background-color: rgb(190, 29, 1);
+  border: none;
+  border-radius: 5px;
+  color: rgb(238, 238, 238);
+  font-size: 1em;
+  margin-top: 1em;
+  padding: 0.5em;
+}
+#belso-tartalom button:hover {
+  cursor: pointer;
+}
+@media screen and (max-width: 500px) {
+  #belso-tartalom img {
+    max-width: 100%;
+  }
+}
