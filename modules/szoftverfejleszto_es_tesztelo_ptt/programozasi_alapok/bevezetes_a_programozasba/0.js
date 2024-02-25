@@ -8,7 +8,6 @@ let oldalNavElemek = [
         cim: '1. óra',
         link: './index.html',
     },
-    /*
     {
         type: 'a',
         cim: '2. óra',
@@ -64,7 +63,36 @@ let oldalNavElemek = [
         cim: '12. óra',
         link: './12_ora.html',
     },
-	*/
+    {
+        type: 'a',
+        cim: '13. óra',
+        link: './13_ora.html',
+    },
+    {
+        type: 'a',
+        cim: '14. óra',
+        link: './14_ora.html',
+    },
+    {
+        type: 'a',
+        cim: '15. óra',
+        link: './15_ora.html',
+    },
+    {
+        type: 'a',
+        cim: '16. óra',
+        link: './16_ora.html',
+    },
+    {
+        type: 'a',
+        cim: '17. óra',
+        link: './17_ora.html',
+    },
+    {
+        type: 'a',
+        cim: '18. óra',
+        link: './18_ora.html',
+    },
 ];
 
 let aktivFelso = '';
@@ -72,6 +100,6 @@ let aktivFelso = '';
 let felsoNavElemek = [
     {
         cim: 'Bevezetés a programozásba',
-        link: '../index.html',
+        link: './index.html',
     },
 ];

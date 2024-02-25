@@ -28,6 +28,11 @@ let oldalNavElemek = [
         cim: 'Teszt 2',
         link: './teszt_02.html',
     },
+    {
+        type: 'a',
+        cim: 'Megelőző karbantartás és hibakeresés',
+        link: './megelozo_karbantartas_es_hibakereses.html',
+    },
 ];
 
 let aktivFelso = '';

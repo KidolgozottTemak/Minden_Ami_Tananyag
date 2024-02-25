@@ -1,5 +1,5 @@
 let i = 1;
-let aktiv = 'Bevezetés a programozásba';
+let aktiv = '1. óra';
 
 let adatok = [
     {

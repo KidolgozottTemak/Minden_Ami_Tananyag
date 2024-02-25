@@ -15,6 +15,11 @@ let oldalNavElemek = [
     },
     {
         type: 'a',
+        cim: 'Webszerkesztési alapok',
+        link: './webszerkesztesi_alapok.html',
+    },
+    {
+        type: 'a',
         cim: 'Teszt 1',
         link: './teszt_01.html',
     },

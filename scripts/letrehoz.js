@@ -36,7 +36,12 @@ function letrehoz(adatTomb) {
             break;
         }
         case 'img': {
-            letrehozott = `<img src="${adatTomb[1]}" />`;
+            if (adatTomb[2] === 'kod') {
+                letrehozott = `<img src="${adatTomb[1]}" class="kod-kep" />`;
+            } else {
+                letrehozott = `<img src="${adatTomb[1]}" />`;
+            }
+            console.log(letrehozott);
             break;
         }
         case 'p': {
@@ -45,10 +50,15 @@ function letrehoz(adatTomb) {
         }
         case 'a': {
             if (adatTomb[2] === 'Tananyag') {
-                letrehozott = `<p>Forrás: <a href="${adatTomb[1]}">${adatTomb[2]}</a></p>`;
+                if (adatTomb[3] === 'letolt') {
+                    letrehozott = `<p>Forrás: <a href="${adatTomb[1]}" download>${adatTomb[2]}</a></p>`;
+                } else {
+                    letrehozott = `<p>Forrás: <a href="${adatTomb[1]}">${adatTomb[2]}</a></p>`;
+                }
             } else {
                 letrehozott = `<p>Forrás: <a href="${adatTomb[1]}" target="_blank">${adatTomb[2]}</a></p>`;
             }
+
             break;
         }
         case 'radio': {
