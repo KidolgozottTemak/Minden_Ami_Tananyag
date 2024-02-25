@@ -33,6 +33,16 @@ let oldalNavElemek = [
         cim: 'Megelőző karbantartás és hibakeresés',
         link: './megelozo_karbantartas_es_hibakereses.html',
     },
+    {
+        type: 'a',
+        cim: 'Teszt 3',
+        link: './teszt_03.html',
+    },
+    {
+        type: 'a',
+        cim: 'Laptopok és más eszközök tulajdonságai, hibakeresés',
+        link: './laptopok_es_mas_eszkozok_tulajdonsagai_hibakereses.html',
+    },
 ];
 
 let aktivFelso = '';
